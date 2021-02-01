@@ -1,0 +1,108 @@
+// Typography
+$headingText: "DM Serif Display", serif;
+$bodyText: "Karla", sans-serif;
+
+// Primary Colors
+
+$darkViolet: hsl(256, 26%, 20%);
+$grayishBlue: hsl(216, 30%, 68%);
+
+// Neutral Colors
+
+$veryDarkViolet: hsl(270, 9%, 17%);
+$darkGrayishViolet: hsl(273, 4%, 51%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+html {
+  font-size: 8px;
+}
+body {
+  margin: 0;
+  height: 110vh;
+  font-size: 2rem;
+  font-family: $bodyText;
+}
+header {
+  padding: 0 120px;
+}
+.headerContentWrapper {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+ul li:not(:last-child) {
+  margin: 0 24px 0 0;
+}
+.navLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $darkGrayishViolet;
+}
+.headerButton {
+  padding: 11px 24px;
+  font-size: 1.75rem;
+  background-color: white;
+  border: 2px solid $veryDarkViolet;
+  color: $veryDarkViolet;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0px 40px;
+  background-color: $darkViolet;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero::after {
+  content: url(/images/bg-pattern-intro-right-desktop.svg);
+  position: absolute;
+  right: 0;
+  top: 10rem;
+}
+.hero::before {
+  content: url(/images/bg-pattern-intro-left-desktop.svg);
+  position: absolute;
+  left: 0;
+  top: 45rem;
+}
+.heroTextWrapper {
+  width: 545px;
+  padding: 0 3rem 0 0;
+}
+.heroLine {
+  width: 18.5rem;
+  margin: 0 0 8rem 0;
+}
+.heroHeading {
+  font-size: 8.5rem;
+  line-height: 8rem;
+  font-family: $headingText;
+  font-weight: 400;
+  color: white;
+  margin: 0 0 3rem 0;
+  width: 510px;
+}
+.heroParagraph {
+  color: white;
+  line-height: 3.5rem;
+  margin: 0 0 3rem 0;
+}
+.heroButton {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+.heroImg {
+  transform: translateY(13rem);
+}
