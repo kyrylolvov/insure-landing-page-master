@@ -45,6 +45,10 @@ ul li:not(:last-child) {
   text-decoration: none;
   text-transform: uppercase;
   color: $darkGrayishViolet;
+  transition: all 0.3s;
+}
+.navLink:hover {
+  color: $veryDarkViolet;
 }
 .headerButton {
   padding: 11px 24px;
@@ -56,6 +60,12 @@ ul li:not(:last-child) {
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+.headerButton:hover {
+  background-color: $veryDarkViolet;
+  color: white;
 }
 .hero {
   display: flex;
@@ -104,6 +114,24 @@ ul li:not(:last-child) {
   border: 2px solid white;
   color: white;
   background-color: transparent;
+  transition: all 0.3s;
+}
+.heroButton:hover {
+  border: 2px solid white;
+  color: $darkViolet;
+  background-color: white;
+}
+.footerButton {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  transition: all 0.3s;
+  z-index: 5;
+}
+.footerButton:hover {
+  border: 2px solid white;
+  color: $darkViolet;
+  background-color: white;
 }
 .heroImg {
   transform: translateY(13rem);
@@ -204,6 +232,13 @@ footer {
   align-items: flex-start;
   margin: 0;
 }
+.socialLink {
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.socialLink:hover {
+  filter: brightness(70%);
+}
 .footerHeading {
   font-size: 2rem;
   font-weight: 400;
@@ -213,6 +248,10 @@ footer {
 .footerMenuLink {
   color: $veryDarkViolet;
   text-decoration: none;
+  transition: all 0.3s;
+}
+.footerMenuLink:hover {
+  text-decoration: underline;
 }
 .navBlock ul li {
   margin: 0 0 1.5rem 0;
